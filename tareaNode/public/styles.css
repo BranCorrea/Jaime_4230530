@@ -1,0 +1,253 @@
+@font-face {
+    font-family: agatha ;
+    src: url(img/PetitFormalScript-Regular.ttf);
+}
+div{
+    height: 70%;
+    
+
+}
+.ref{
+    margin-left: 10%;
+}
+
+.header{
+
+    display: flex;
+    margin: 50px;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+form label, form input {
+    display: block;
+    margin: 10px auto;
+}
+
+
+#visitar, #regresarbot, .ref1{
+    border: rgba(144, 154, 160, 0.651) solid;
+    border-radius: 50px;
+    padding: 40px;
+    font-size: 14px;
+    background-color: rgba(163, 169, 173, 0.651) ;
+    box-shadow:0 10px 25px 5px #3e4f63 ;
+    text-align: center;
+}
+
+#visitar{
+    margin-left: 10px;
+}
+header{
+    background-color:rgb(104, 136, 136);
+    width: 100%;
+    height: 150px;
+    padding-top: 0.1px;
+    padding-bottom: 40px;
+    box-shadow:0 10px 25px 5px #3333 ;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+#inicio{
+    margin: 25px 260px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+#visitar{
+    padding: auto;
+    font-family:'Times New Roman', Times, serif ;
+    color: #0a0c0e;
+}
+
+#img1{
+height: 50px;
+width: 50px;
+}
+
+#img2{
+    height: 120px;
+    width: 120px;
+    border-radius: 80%;
+}
+
+.terminos{
+    height: 70%;
+    margin: 15%;
+    margin-top: 5%;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+td{
+    border: #555 solid 1px;
+}
+
+
+.hyp{
+
+    background-color: #555;
+    height: 100%;
+    padding: 10px 0 10px 20px;
+    box-shadow:0 10px 55px 1px #333f ;
+ 
+}
+#texto{
+    width: 900px;
+    text-align: center;
+    margin: auto;
+}
+
+form{
+    width: 600px;
+    margin: 30px;
+    text-align: center;
+    border: #555 solid 1px;
+    padding-bottom: 30px;
+    margin-left: 80px;
+    box-shadow:0 10px 55px 1px #333f ;
+    background-color: #dadadb;
+}
+input{
+margin-top: 10px;
+}
+
+#contenedor{
+    display: flex;
+}
+
+input{
+    border-radius: 1px;
+    margin-left: 10px;
+}
+
+#submit{
+    background-color: #9baec5;
+    border-radius: 5px;
+    height: 25px;
+}
+
+#footer{
+    color: #0a0c0e;
+}
+
+.terminos, .contenedor, .contenedor1{
+    border: #555 1px solid;
+    height: 90%;
+    box-shadow:0 10px 55px 1px #333f ;
+    background-color:#9baec5;
+    text-align: center;
+    align-items: center;
+
+    
+}
+
+#regresar{
+    margin: 0 200px 140px 200px;
+    margin-left: 500px;
+}
+
+#recetas1{
+    border: #555 1px solid;
+    height: 90%;
+    box-shadow:0 10px 55px 1px #333f ;
+    background-color:#9baec5;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.ref1{
+    margin: 10px, 20px, 0px, 40px;
+}
+
+
+
+.terminos{
+    text-align: justify;
+    padding: 20px;
+}
+
+.ref1{
+    margin-right: 10px;
+    margin-left: 900px;
+}
+
+
+
+
+.botones{
+    display: flex;
+    align-items: center;
+}
+
+.boton1{
+    margin: 30px;
+
+    
+
+}
+
+button{
+    padding: 40px;
+    border-radius: 20px;
+    background-color:rgba(163, 169, 173, 0.651) ;
+    box-shadow:0 10px 55px 1px #333f ;
+    margin-bottom: 40px;
+    margin-left: 515px;
+
+
+}
+
+.imagenes{
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.contenedor{
+    width: 70%;
+    display: flex;
+    padding: 15px;
+    margin: auto;
+    align-items: center;
+
+
+}
+h1{
+    color: #3e4f63;
+}
+.contenedor1{
+    width: 70%;
+    height: 100px;
+    padding: 15px;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 20px;
+}

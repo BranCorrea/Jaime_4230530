@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generación de QR para registro</title>
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h4 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Contenedor principal */
+        #contenedor {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* Estilo de los labels e inputs */
+        label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        /* Botones */
+        .btn {
+            padding: 10px 20px;
+            margin: 5px 0;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Contenedor de QR */
+        #qr-code {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h4>Generación de QR para registro</h4>
+    </header>
+
+    <div id="contenedor">
+        <label for="input1">Nombre:</label>
+        <input type="text" id="input1" required maxlength="255" placeholder="Nombre completo">
+
+        <label for="input2">Correo Electrónico:</label>
+        <input type="email" id="input2" required maxlength="255" placeholder="Ingresa el correo electrónico">
+
+        <label for="input3">Selección de Institución:</label>
+        <input type="text" id="input3" list="InstitucionLista" required>
+        <datalist id="InstitucionLista">
+            <option value="Universidad Nacional Autónoma de México (UNAM)"></option>
+            <option value="Instituto Politécnico Nacional (IPN)"></option>
+            <option value="Tecnológico de Monterrey"></option>
+            <option value="Instituto Tecnológico Autónomo de México (ITAM)"></option>
+            <option value="Universidad Autónoma Metropolitana (UAM)"></option>
+            <option value="Universidad Iberoamericana (IBERO)"></option>
+            <option value="Universidad La Salle"></option>
+            <option value="Universidad Panamericana (UP)"></option>
+        </datalist>
+
+        <label for="input4">Dependencia:</label>
+        <input type="text" id="input4" placeholder="Dependencia">
+
+        <button onclick="generarQR()" class="btn">Generar QR</button>
+        <button onclick="location.href='index.html'" class="btn">Generar Nuevo QR</button>
+
+        <div id="qr-code"></div>
+    </div>
+
+    <script src="appp.js"></script>
+
+</body>
+
+</html>
